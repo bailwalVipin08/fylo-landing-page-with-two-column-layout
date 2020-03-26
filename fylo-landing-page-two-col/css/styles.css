@@ -29,6 +29,13 @@
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif; }
 
+.intro {
+  margin-bottom: 2rem; }
+  .intro .intro-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5; }
+
 header {
   padding: 2rem 8rem;
   width: 100%;
@@ -65,12 +72,6 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column; }
-    #hero .content-container .intro {
-      margin-bottom: 2rem; }
-      #hero .content-container .intro .intro-text {
-        font-family: "Open Sans", sans-serif;
-        font-size: 1.8rem;
-        line-height: 1.5; }
     #hero .content-container .intro-form {
       display: flex; }
       #hero .content-container .intro-form form {
@@ -162,6 +163,42 @@ header {
         shape-outside: circle(50%); }
       #features .section-card .user-info .user-details {
         padding-left: 1rem; }
+
+#contact {
+  display: flex;
+  align-items: center;
+  background-color: #585989;
+  padding-top: 8rem;
+  color: #fff; }
+  #contact .content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8rem; }
+    #contact .content-container .intro-text {
+      line-height: 1.5;
+      font-size: 1.6rem; }
+  #contact .contact-form {
+    width: 100%;
+    padding: 4rem 6rem;
+    align-self: flex-start; }
+    #contact .contact-form form {
+      display: flex;
+      flex-direction: column; }
+      #contact .contact-form form input {
+        width: 100%;
+        padding: 1.25rem;
+        border-radius: 0.25rem;
+        border: 1px solid #bfbfbf; }
+      #contact .contact-form form button {
+        margin-top: 2rem;
+        padding: 1rem;
+        width: 40%;
+        background-color: #3065f8;
+        border-radius: 0.15rem;
+        box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.25);
+        border: none;
+        color: #fff; }
 
 *,
 *::before,

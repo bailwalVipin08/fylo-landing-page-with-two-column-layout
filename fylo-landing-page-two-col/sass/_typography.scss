@@ -17,5 +17,13 @@
 .heading-tertiary {
   font-size: 1.6rem;
   font-family: $font-stack-1;
+}
 
+.intro {
+  margin-bottom: 2rem;
+  .intro-text {
+    font-family: $font-stack-2;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
 }
