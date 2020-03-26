@@ -14,6 +14,21 @@
 1800 = 112.5em
 
 */
+.heading, .heading-primary, .heading-secondary {
+  margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif; }
+
+.heading-primary {
+  font-size: 4rem;
+  line-height: 1.5; }
+
+.heading-secondary {
+  font-size: 3.8rem; }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif; }
+
 header {
   padding: 2rem 8rem;
   width: 100%;
@@ -44,18 +59,12 @@ header {
   padding: 8rem 3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%; }
   #hero .content-container {
     padding: 4rem;
     width: 100%;
     display: flex;
     flex-direction: column; }
-    #hero .content-container .heading-primary {
-      font-size: 4rem;
-      line-height: 1.5;
-      margin-bottom: 2rem;
-      font-family: "Raleway", sans-serif; }
     #hero .content-container .intro {
       margin-bottom: 2rem; }
       #hero .content-container .intro .intro-text {
@@ -91,6 +100,68 @@ header {
       max-width: 100%;
       width: 100%;
       height: auto; }
+
+#features {
+  padding: 8rem 3rem;
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  #features .section-content {
+    padding: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif; }
+  #features .section-description {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    width: 100%; }
+    #features .section-description .description:not(:last-of-type) {
+      margin-bottom: 2rem; }
+  #features .section-action {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 0.2rem solid #3c9f8f;
+    padding-bottom: 1rem;
+    width: 27%; }
+    #features .section-action a {
+      text-decoration: none;
+      color: #3c9f8f; }
+    #features .section-action span {
+      align-self: baseline;
+      position: absolute;
+      top: 0.2rem;
+      left: 15rem; }
+      #features .section-action span img {
+        width: 2.5rem;
+        height: auto; }
+  #features .section-img .feature-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
+  #features .section-card {
+    margin-top: 5rem;
+    border: 0.15rem solid #f6f6fe;
+    box-shadow: 0 0.6rem 1.6rem #bfbfbf;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 60%; }
+    #features .section-card .quote {
+      width: 5%;
+      height: auto; }
+    #features .section-card p {
+      line-height: 2; }
+    #features .section-card .user-info {
+      margin-top: 2rem;
+      display: flex; }
+      #features .section-card .user-info .user-img {
+        width: 15%;
+        height: 15%;
+        border-radius: 50%;
+        shape-outside: circle(50%); }
+      #features .section-card .user-info .user-details {
+        padding-left: 1rem; }
 
 *,
 *::before,

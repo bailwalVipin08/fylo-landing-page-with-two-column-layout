@@ -1,0 +1,21 @@
+.heading {
+  margin-bottom: 2rem;
+  font-family: $font-stack-1;
+}
+
+.heading-primary {
+  @extend .heading;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+.heading-secondary {
+  @extend .heading;
+  font-size: 3.8rem;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-family: $font-stack-1;
+
+}
