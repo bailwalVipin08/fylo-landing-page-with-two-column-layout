@@ -1,0 +1,67 @@
+#hero {
+  padding: 8rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .content-container {
+    padding: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .heading-primary {
+      font-size: 4rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      font-family: $font-stack-1;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+      .intro-text {
+        font-family: $font-stack-2;
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+    }
+    .intro-form {
+      display: flex;
+
+      form {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: center;
+        input {
+          padding: 1rem;
+          border: 0.1rem solid $color-blue-dark;
+          border-radius: 0.2rem;
+          width: 32rem;
+          font-family: $font-stack-1;
+        }
+        button {
+          padding: 1.1rem 2rem;
+          background-color: $color-blue-bright;
+          color: #fff;
+          margin-left: 2rem;
+          border: none;
+          border-radius: 0.25rem;
+          width: 20rem;
+          font-family: $font-stack-1;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .img-container {
+    padding: 4rem;
+    .hero-image {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

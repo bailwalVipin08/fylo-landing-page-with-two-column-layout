@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -11,10 +10,68 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
   </head>
-  <body>  
+  <body>
+    <header id="header">
+      <div class="logo-container">
+        <a href="#">
+          <img src="./images/logo.svg" alt="" class="header-img" />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-list__item">
+            <a href="#features" class="navbar-list__item--link">Features</a>
+          </li>
+          <li class="navbar-list__item">
+            <a href="#team" class="navbar-list__item--link">Team</a>
+          </li>
+          <li class="navbar-list__item">
+            <a href="#signin" class="navbar-list__item--link">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="content-container">
+        <div class="main-title">
+          <h1 class="heading-primary text-bold">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+        </div>
+        <div class="intro">
+          <p class="intro-text">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+        </div>
+        <div class="intro-form">
+          <form>
+            <div class="field">
+              <input type="email" placeholder="Enter your email..." />
+            </div>
+            <div class="field">
+              <button type="submit" class="submit-btn">Get Started</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="./images/illustration-1.svg" class="hero-image" />
+      </div>
+    </section>
   </body>
 </html>

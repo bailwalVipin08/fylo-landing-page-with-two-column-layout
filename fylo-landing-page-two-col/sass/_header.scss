@@ -1,0 +1,41 @@
+header {
+  padding: 2rem 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo-container {
+    .header-img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+
+  .navbar {
+    display: flex;
+
+    &-list {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      &__item {
+        padding: 2rem;
+
+        &--link {
+          &:link,
+          &:visited {
+            text-decoration: none;
+            font-size: 2rem;
+            color: $color-blue-dark;
+          }
+        }
+      }
+    }
+  }
+}
