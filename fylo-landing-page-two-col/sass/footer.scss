@@ -1,0 +1,103 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 4rem;
+  padding-bottom: 4rem;
+  background-color: $color-blue-dark;
+  color: #fff;
+  font-family: $font-stack-2;
+  font-size: 1.6rem;
+
+  .logo-container {
+    .footer-logo {
+      fill: #fff;
+    }
+  }
+  .links-container {
+    padding-top: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .col-1 {
+      .contact {
+        display: flex;
+        padding-bottom: 2rem;
+        align-items: center;
+        .contact-text {
+          padding-left: 2rem;
+        }
+      }
+    }
+    .footer-list {
+      list-style: none;
+      line-height: 2;
+      &__item {
+        &--link {
+          &:link,
+          &:visited {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .col-4 {
+      display: flex;
+
+      a {
+        margin: 0 1rem;
+        border: 0.2rem solid #fff;
+        border-radius: 50%;
+        padding: 1rem;
+        &:link,
+        &:visited {
+          color: #fff;
+        }
+
+        &:nth-child(1) {
+          padding: 1rem 1.8rem;
+        }
+
+        &:nth-child(2) {
+          padding: 1rem 1.5rem;
+        }
+
+        &:nth-child(3) {
+          padding: 1rem 1.5rem;
+        }
+        span {
+          font-size: 2rem;
+
+          .fab {
+            // width: 5rem;
+            // height: 5rem;
+            // text-align: center;
+            // vertical-align: middle;
+            // text-decoration: none;
+            // border: 1px solid #fff;
+            // border-radius: 50%;
+          }
+
+          .fa-facebook-f {
+            // padding: 2rem 2.3rem;
+          }
+        }
+      }
+    }
+  }
+  .attribution {
+    font-size: 1.6rem;
+    font-family: $font-stack-2;
+    text-align: center;
+    padding-top: 4rem;
+    color: #fff;
+
+    a {
+      &:link,
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+}

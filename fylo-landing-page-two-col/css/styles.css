@@ -106,7 +106,8 @@ header {
   padding: 8rem 3rem;
   display: flex;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  background: url("../images/bg-curve-desktop.svg") no-repeat; }
   #features .section-content {
     padding: 4rem;
     width: 100%;
@@ -121,22 +122,17 @@ header {
       margin-bottom: 2rem; }
   #features .section-action {
     display: flex;
-    align-items: center;
-    position: relative;
-    border-bottom: 0.2rem solid #3c9f8f;
-    padding-bottom: 1rem;
-    width: 27%; }
+    align-items: center; }
     #features .section-action a {
       text-decoration: none;
-      color: #3c9f8f; }
-    #features .section-action span {
-      align-self: baseline;
-      position: absolute;
-      top: 0.2rem;
-      left: 15rem; }
-      #features .section-action span img {
-        width: 2.5rem;
-        height: auto; }
+      color: #3c9f8f;
+      display: flex;
+      align-items: center;
+      border-bottom: 0.2rem solid #3c9f8f;
+      padding-bottom: 1rem;
+      font-size: 1.6rem; }
+      #features .section-action a object {
+        padding-left: 1rem; }
   #features .section-img .feature-img {
     width: 100%;
     max-width: 100%;
@@ -147,7 +143,8 @@ header {
     box-shadow: 0 0.6rem 1.6rem #bfbfbf;
     border-radius: 1rem;
     padding: 2rem;
-    width: 60%; }
+    width: 60%;
+    font-size: 1.35rem; }
     #features .section-card .quote {
       width: 5%;
       height: auto; }
@@ -155,7 +152,8 @@ header {
       line-height: 2; }
     #features .section-card .user-info {
       margin-top: 2rem;
-      display: flex; }
+      display: flex;
+      align-items: center; }
       #features .section-card .user-info .user-img {
         width: 15%;
         height: 15%;
@@ -168,7 +166,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #585989;
-  padding-top: 8rem;
+  padding: 8rem 0;
   color: #fff; }
   #contact .content-container {
     width: 100%;
@@ -199,6 +197,60 @@ header {
         box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.25);
         border: none;
         color: #fff; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 4rem;
+  padding-bottom: 4rem;
+  background-color: #070439;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem; }
+  .footer .logo-container .footer-logo {
+    fill: #fff; }
+  .footer .links-container {
+    padding-top: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .footer .links-container .col-1 .contact {
+      display: flex;
+      padding-bottom: 2rem;
+      align-items: center; }
+      .footer .links-container .col-1 .contact .contact-text {
+        padding-left: 2rem; }
+    .footer .links-container .footer-list {
+      list-style: none;
+      line-height: 2; }
+      .footer .links-container .footer-list__item--link:link, .footer .links-container .footer-list__item--link:visited {
+        text-decoration: none;
+        color: #fff; }
+    .footer .links-container .col-4 {
+      display: flex; }
+      .footer .links-container .col-4 a {
+        margin: 0 1rem;
+        border: 0.2rem solid #fff;
+        border-radius: 50%;
+        padding: 1rem; }
+        .footer .links-container .col-4 a:link, .footer .links-container .col-4 a:visited {
+          color: #fff; }
+        .footer .links-container .col-4 a:nth-child(1) {
+          padding: 1rem 1.8rem; }
+        .footer .links-container .col-4 a:nth-child(2) {
+          padding: 1rem 1.5rem; }
+        .footer .links-container .col-4 a:nth-child(3) {
+          padding: 1rem 1.5rem; }
+        .footer .links-container .col-4 a span {
+          font-size: 2rem; }
+  .footer .attribution {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding-top: 4rem;
+    color: #fff; }
+    .footer .attribution a:link, .footer .attribution a:visited {
+      color: #fff; }
 
 *,
 *::before,

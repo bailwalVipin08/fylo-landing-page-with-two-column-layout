@@ -19,14 +19,24 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7e697e2338.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <body>
     <header id="header">
       <div class="logo-container">
         <a href="#">
-          <img src="./images/logo.svg" alt="" class="header-img" />
+          <object
+            type="image/svg+xml"
+            data="./images/logo.svg"
+            class="header-img"
+          ></object>
         </a>
       </div>
       <nav class="navbar">
@@ -92,10 +102,13 @@
           </p>
         </div>
         <div class="section-action">
-          <a href="#" class="info-link"
-            >See how Fylo works<span>
-              <img src="./images/icon-arrow.svg" /> </span
-          ></a>
+          <a href="#" class="info-link">
+            See how Fylo works
+            <object
+              type="image/svg+xml"
+              data="./images/icon-arrow.svg"
+            ></object>
+          </a>
         </div>
         <div class="section-card">
           <img src="./images/icon-quotes.svg" alt="" class="quote" />
@@ -131,7 +144,9 @@
         </div>
         <div class="intro">
           <p class="intro-text">
-            It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
           </p>
         </div>
       </div>
@@ -146,5 +161,89 @@
         </form>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="logo-container">
+        <a href="#">
+          <object
+            type="image/svg+xml"
+            data="./images/logo-footer.svg"
+            class="footer-logo"
+          ></object>
+        </a>
+      </div>
+      <div class="links-container">
+        <div class="col-1">
+          <div class="contact">
+            <object
+              type="image/svg+xml"
+              data="./images/icon-phone.svg"
+            ></object>
+            <p class="contact-text">Phone: +1-543-123-4567</p>
+          </div>
+          <div class="contact">
+            <object
+              type="image/svg+xml"
+              data="./images/icon-email.svg"
+            ></object>
+            <p class="contact-text">example@fylo.com</p>
+          </div>
+        </div>
+        <div class="col-2">
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#" class="footer-list__item--link">About Us</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-list__item--link">Jobs </a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-list__item--link">Press </a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-list__item--link">Blog </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#" class="footer-list__item--link">Contact Us</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-list__item--link">Terms </a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-list__item--link">Privacy </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <a href="#">
+            <span>
+              <i class="fab fa-facebook-f"></i>
+            </span>
+          </a>
+
+          <a href="#">
+            <span>
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+
+          <a href="#">
+            <span>
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Vipin Bailwal</a>.
+      </p>
+    </footer>
   </body>
 </html>
