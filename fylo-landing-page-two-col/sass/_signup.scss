@@ -5,6 +5,10 @@
   padding: 8rem 0;
   color: #fff;
 
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   .content-container {
     width: 100%;
     display: flex;
@@ -13,6 +17,15 @@
     .intro-text {
       line-height: 1.5;
       font-size: 1.6rem;
+
+      @include respond(phone) {
+        text-align: center;
+        font-size: 1.42rem;
+      }
+    }
+
+    @include respond(phone) {
+      padding: 0 4rem;
     }
   }
 
@@ -20,6 +33,9 @@
     width: 100%;
     padding: 4rem 6rem;
     align-self: flex-start;
+    @include respond(phone) {
+      padding: 4rem 5rem;
+    }
 
     form {
       display: flex;
@@ -40,6 +56,12 @@
         box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.25);
         border: none;
         color: #fff;
+
+        @include respond(phone) {
+          margin-top: 1rem;
+          font-weight: 700;
+          width: 100%;
+        }
       }
     }
   }
