@@ -30,26 +30,31 @@
   </head>
   <body>
     <header id="header">
-<h1 class="logo-container">
-  <img src="./images/logo.svg" width="166" height="49" alt="Fylo" class="header-img"/>
-</h1>
+      <h1 class="logo-container">
+        <img
+          src="./images/logo.svg"
+          width="166"
+          height="49"
+          alt="Fylo"
+          class="header-img"
+        />
+      </h1>
       <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-list__item">
-            <a href="#features" class="navbar-list__item--link">Features</a>
+            <a href="#" class="navbar-list__item--link">Features</a>
           </li>
           <li class="navbar-list__item">
-            <a href="#team" class="navbar-list__item--link">Team</a>
+            <a href="#" class="navbar-list__item--link">Team</a>
           </li>
           <li class="navbar-list__item">
-            <a href="#signin" class="navbar-list__item--link">Sign In</a>
+            <a href="#" class="navbar-list__item--link">Sign In</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <section id="hero">
-      
       <div class="content-container">
         <div class="main-title">
           <h1 class="heading-primary">
@@ -75,16 +80,16 @@
         </div>
       </div>
       <div class="img-container">
-        <img src="./images/illustration-1.svg" class="hero-image" />
+        <img src="./images/illustration-1.svg" alt="hero-illustration" class="hero-image" />
       </div>
     </section>
 
     <section id="features" class="section">
       <div class="section-content">
         <div class="section-title">
-          <h1 class="heading-secondary">
+          <h2 class="heading-secondary">
             Stay productive, wherever you are
-          </h1>
+          </h2>
         </div>
         <div class="section-description">
           <p class="description">
@@ -102,7 +107,7 @@
             <object
               type="image/svg+xml"
               data="./images/icon-arrow.svg"
-            ></object>
+            >Your browser doesn't support svg images.</object>
           </a>
         </div>
         <div class="section-card">
@@ -148,10 +153,12 @@
       <div class="contact-form">
         <form>
           <div class="field">
-            <input type="email" placeholder="Enter your email..." />
+            <input type="email" name="email" placeholder="Enter your email..." />
           </div>
           <div class="field">
-            <button type="submit" class="submit-btn">Get Started For Free</button>
+            <button type="submit" class="submit-btn">
+              Get Started For Free
+            </button>
           </div>
         </form>
       </div>
@@ -159,12 +166,12 @@
 
     <footer class="footer">
       <div class="logo-container">
-        <a href="#">
+        <a href="#" aria-label="Fylo-Home">
           <object
             type="image/svg+xml"
             data="./images/logo-footer.svg"
             class="footer-logo"
-          ></object>
+          >Fylo-logo</object>
         </a>
       </div>
       <div class="links-container">
@@ -173,30 +180,30 @@
             <object
               type="image/svg+xml"
               data="./images/icon-phone.svg"
-            ></object>
+            >Phone</object>
             <p class="contact-text">Phone: +1-543-123-4567</p>
           </div>
           <div class="contact">
             <object
               type="image/svg+xml"
               data="./images/icon-email.svg"
-            ></object>
+            >Email</object>
             <p class="contact-text">example@fylo.com</p>
           </div>
         </div>
         <div class="col-2">
           <ul class="footer-list">
             <li class="footer-list__item">
-              <a href="#" class="footer-list__item--link">About Us</a>
+              <a href="#" aria-label="About" class="footer-list__item--link">About Us</a>
+            </li>
+            <li class="footer-list__item">  
+              <a href="#" aria-label="Jobs" class="footer-list__item--link">Jobs</a>
             </li>
             <li class="footer-list__item">
-              <a href="#" class="footer-list__item--link">Jobs </a>
+              <a href="#" aria-label="Press" class="footer-list__item--link">Press</a>
             </li>
             <li class="footer-list__item">
-              <a href="#" class="footer-list__item--link">Press </a>
-            </li>
-            <li class="footer-list__item">
-              <a href="#" class="footer-list__item--link">Blog </a>
+              <a href="#" aria-label="Blog" class="footer-list__item--link">Blog</a>
             </li>
           </ul>
         </div>
